@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", Arial, sans-serif;
+    background-color: #171717;
+    color: #282239;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #ddd9e5;
+}
+
+.cabecalho {
+    background-color: #29213d;
+    color: white;
+    padding: 28px 30px 25px;
+}
+
+.data {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #c9bfd6;
+    margin-bottom: 14px;
+}
+
+.cabecalho h1 {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.local {
+    font-size: 15px;
+    color: #c6bdd0;
+}
+
+.conteudo {
+    background-color: #eeedf5;
+    padding: 28px 30px 20px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.ferramentas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.ferramentas input,
+.ferramentas select,
+.ferramentas button {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #dcd9e4;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.ferramentas input {
+    flex: 2 1 180px;
+    min-width: 0;
+}
+
+.ferramentas select {
+    flex: 1 1 160px;
+    min-width: 0;
+}
+
+.ferramentas button {
+    background: #29213d;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.ferramentas button:hover {
+    background: #493762;
+}
+
+#sem-resultados {
+    margin-bottom: 20px;
+    color: #706b7e;
+}
+
+#sem-resultados[hidden] {
+    display: none;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 13px;
+    padding: 20px;
+    min-height: 185px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f7e5df;
+    color: #704333;
+    font-size: 13px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #706b7e;
+    margin-bottom: 10px;
+}
+
+.detalhes {
+    margin-top: auto;
+    font-size: 14px;
+    color: #aa4325;
+}
+
+.cronograma {
+    margin-top: 28px;
+}
+
+.cronograma h2 {
+    margin-bottom: 2px;
+}
+
+.subtitulo {
+    font-size: 14px;
+    color: #716b7e;
+    margin-bottom: 12px;
+}
+
+.tabela-container {
+    background-color: white;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+thead {
+    background-color: #b54120;
+    color: white;
+}
+
+th {
+    padding: 13px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+}
+
+td {
+    padding: 13px 15px;
+    font-size: 15px;
+    line-height: 1.35;
+    border-bottom: 1px solid #dcd9e4;
+    overflow-wrap: anywhere;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f6fa;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 14%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 29%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 29%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 28%;
+}
+
+.aviso {
+    font-size: 13px;
+    color: #777080;
+    padding: 12px 15px;
+    background-color: white;
+}
+
+body.dark .conteudo {
+    background: #211d2b;
+}
+
+body.dark .card,
+body.dark .tabela-container,
+body.dark .aviso {
+    background: #302a3e;
+    color: #ffffff;
+}
+
+body.dark h2,
+body.dark h3,
+body.dark td {
+    color: #ffffff;
+}
+
+body.dark .card p,
+body.dark .subtitulo,
+body.dark .aviso,
+body.dark #sem-resultados {
+    color: #c6bdd0;
+}
+
+body.dark tbody tr:nth-child(odd) {
+    background: #302a3e;
+}
+
+body.dark tbody tr:nth-child(even) {
+    background: #393248;
+}
+
+body.dark td {
+    border-color: #51475f;
+}
+
+body.dark .ferramentas input,
+body.dark .ferramentas select {
+    background: #393248;
+    color: white;
+    border-color: #51475f;
+}
+
+body.dark .ferramentas button {
+    background: #f7e5df;
+    color: #29213d;
+}
+
+@media (max-width: 600px) {
+
+    .cabecalho {
+        padding: 28px 30px 24px;
+    }
+
+    .cabecalho h1 {
+        font-size: 25px;
+    }
+
+    .conteudo {
+        padding: 28px 30px 20px;
+    }
+
+    .ferramentas {
+        flex-direction: column;
+    }
+
+    .ferramentas input,
+    .ferramentas select,
+    .ferramentas button {
+        width: 100%;
+        flex: auto;
+    }
+
+    .cards {
+        gap: 16px;
+    }
+
+    .card {
+        padding: 18px 15px;
+        min-height: 205px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .tag {
+        font-size: 12px;
+    }
+
+    th {
+        padding: 12px 8px;
+        font-size: 10px;
+    }
+
+    td {
+        padding: 12px 8px;
+        font-size: 12px;
+    }
+
+    .aviso {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .cabecalho {
+        padding: 25px 20px;
+    }
+
+    .conteudo {
+        padding: 24px 15px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: 165px;
+    }
+
+    .cabecalho h1 {
+        font-size: 23px;
+    }
+
+    th {
+        font-size: 9px;
+        padding: 10px 5px;
+    }
+
+    td {
+        font-size: 11px;
+        padding: 10px 5px;
+    }
+}

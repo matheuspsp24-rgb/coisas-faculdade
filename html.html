@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana de Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+  
+        <header class="cabecalho">
+            <p class="data">SÁBADO, 8 DE NOVEMBRO</p>
+
+            <h1>Semana de Tecnologia</h1>
+
+            <p class="local">
+                Laboratórios de informática, bloco B
+            </p>
+        </header>
+
+        <div class="conteudo">
+
+            <section class="oficinas">
+
+                <h2>Oficinas e palestras</h2>
+
+                <div class="ferramentas">
+
+                    <input
+                        type="search"
+                        id="pesquisa"
+                        placeholder="Pesquisar oficinas..."
+                        aria-label="Pesquisar oficinas"
+                    >
+
+                    <select id="filtro" aria-label="Filtrar por categoria">
+                        <option value="todas">Todas as categorias</option>
+                        <option value="versionamento">Versionamento</option>
+                        <option value="automação">Automação</option>
+                        <option value="carreira">Carreira</option>
+                        <option value="prática">Prática</option>
+                    </select>
+
+                    <button id="tema" type="button">
+                         Modo escuro
+                    </button>
+
+                </div>
+
+                <p id="sem-resultados" hidden>
+                    Nenhuma oficina encontrada.
+                </p>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <span class="tag">Versionamento</span>
+
+                        <h3>Git e GitHub do zero</h3>
+
+                        <p>
+                            Crie seu primeiro repositório e
+                            aprenda a desfazer o que quebrou.
+                        </p>
+
+                        <span class="detalhes">
+                            2h, 30 vagas
+                        </span>
+                    </article>
+
+                    <article class="card">
+                        <span class="tag">Automação</span>
+
+                        <h3>Python para tarefas repetitivas</h3>
+
+                        <p>
+                            Renomeie mil arquivos e leia
+                            planilhas sem abrir o Excel.
+                        </p>
+
+                        <span class="detalhes">
+                            3h, 25 vagas
+                        </span>
+                    </article>
+
+                    <article class="card">
+                        <span class="tag">Carreira</span>
+
+                        <h3>Como é trabalhar com dados</h3>
+
+                        <p>
+                            Três profissionais da região contam
+                            a rotina real da área.
+                        </p>
+
+                        <span class="detalhes">
+                            1h30, 80 vagas
+                        </span>
+                    </article>
+
+                    <article class="card">
+                        <span class="tag">Prática</span>
+
+                        <h3>Hackathon relâmpago</h3>
+
+                        <p>
+                            Quatro horas, um problema da
+                            cidade, uma solução em equipe.
+                        </p>
+
+                        <span class="detalhes">
+                            4h, 40 vagas
+                        </span>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="cronograma">
+
+                <h2>Cronograma do dia</h2>
+
+                <p class="subtitulo">
+                    Programação completa de sábado.
+                </p>
+
+                <div class="tabela-container">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>HORÁRIO</th>
+                                <th>ATIVIDADE</th>
+                                <th>LOCAL</th>
+                                <th>RESPONSÁVEL</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>08:30</td>
+                                <td>Credenciamento</td>
+                                <td>Hall do bloco B</td>
+                                <td>Organização</td>
+                            </tr>
+
+                            <tr>
+                                <td>09:00</td>
+                                <td>Abertura</td>
+                                <td>Auditório</td>
+                                <td>Coordenação</td>
+                            </tr>
+
+                            <tr>
+                                <td>09:30</td>
+                                <td>Git e GitHub do zero</td>
+                                <td>Laboratório 2</td>
+                                <td>Monitoria</td>
+                            </tr>
+
+                            <tr>
+                                <td>11:30</td>
+                                <td>Intervalo</td>
+                                <td>Pátio coberto</td>
+                                <td>Organização</td>
+                            </tr>
+
+                            <tr>
+                                <td>13:00</td>
+                                <td>Python para automação</td>
+                                <td>Laboratório 1</td>
+                                <td>Monitoria</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="aviso">
+                        As inscrições nas oficinas encerram na sexta-feira.
+                    </p>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+ <script src="script.js" defer></script>
+</html>
